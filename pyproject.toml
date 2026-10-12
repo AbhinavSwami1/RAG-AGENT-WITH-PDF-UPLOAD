@@ -1,0 +1,31 @@
+[project]
+name = "rag-agent-with-pdf-upload"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AbhinavSwami1", email = "abhinavswami074@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "langchain>=1.4.4",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.1",
+    "langchain-groq>=1.1.3",
+    "langchain-text-splitters>=1.1.3",
+    "langgraph>=1.2.14",
+    "pypdf>=6.20.1",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "streamlit>=1.65.0",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+rag-agent-with-pdf-upload = "rag_agent_with_pdf_upload:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
